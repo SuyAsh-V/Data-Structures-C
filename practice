@@ -1,0 +1,43 @@
+algorithm intopo(infix[i])
+    i = 0
+    while infix[i] is not null character do
+
+        ch = infix[i]
+        
+        if isoperand(ch)
+            print ch 
+        
+        else if ch is equal to '(' do
+            push ch
+        
+        else if ch is equal to ')' do
+             
+             while stack is not empty and equal to '(' do
+                print pop()
+
+            end while
+
+            if stack is not empty and equal to '(' do
+                pop()
+
+            end if
+
+        else
+            while stack is not empty and isp(peek()) >= icp(ch) do
+                print pop()
+
+            end while
+
+            push ch
+
+        
+        increament i
+
+        end if
+
+    while stack is not empty do 
+        print pop()
+    
+    end while
+
+end functiones

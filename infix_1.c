@@ -100,7 +100,8 @@ int isOperand(char ch) {
 }
 
 void infixToPostfix(char infix[]) {
-    for (int i = 0; infix[i] != '\0'; i++) {
+    
+    while (int i = 0; infix[i] != '\0'; i++) {
         char ch = infix[i];
 
         if (isOperand(ch)) {
@@ -131,4 +132,3 @@ void infixToPostfix(char infix[]) {
         printf("%c", pop());
     }
 }
-

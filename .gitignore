@@ -1,3 +1,1 @@
-echo *.exe > .gitignore
-echo *.out >> .gitignore
-echo *.o >> .gitignore
+﻿*.exe
